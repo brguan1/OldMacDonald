@@ -1,4 +1,4 @@
-class NamedCow extends Cow
+class NamedCow //extends Cow
 {
 	
 }
