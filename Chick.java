@@ -5,16 +5,16 @@ class Chick implements Animal
      private int randomSound;      
      public Chick(String type, String sound)     {         
          myType = type;         
-         mySound = sound;     
+         mySound = sound;   
+         randomSound = (int)(Math.random()*2)+1;  
      }     
      public Chick()     {         
          myType = "I'm a chick!";
-         mySound = "Cluck!";         
-         randomSound = (int)(Math.random()*2)+1;     
+         mySound = "Cluck!";              
      }      
      public String getSound()
      {
-     	if (randomSound <1)
+     	if (randomSound ==1)
      	{
      		mySound = "Cheep!";
      	} else {
@@ -23,5 +23,4 @@ class Chick implements Animal
      	return mySound;
      }     
      public String getType(){return myType;}
-     public int getRandomSound(){return randomSound;} 
 }
